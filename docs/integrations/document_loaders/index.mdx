@@ -1,0 +1,47 @@
+---
+canonical: https://python.langchain.com/v0.2/docs/integrations/document_loaders/
+sidebar_class_name: hidden
+sidebar_position: 0
+---
+
+# Document loaders
+
+import { CategoryTable, IndexTable } from "@theme/FeatureTables";
+
+DocumentLoaders load data into the standard LangChain Document format.
+
+Each DocumentLoader has its own specific parameters, but they can all be invoked in the same way with the .load method.
+An example use case is as follows:
+
+```python
+<!--IMPORTS:[{"imported": "CSVLoader", "source": "langchain_community.document_loaders.csv_loader", "docs": "https://api.python.langchain.com/en/latest/document_loaders/langchain_community.document_loaders.csv_loader.CSVLoader.html", "title": "Document loaders"}]-->
+from langchain_community.document_loaders.csv_loader import CSVLoader
+
+loader = CSVLoader(
+    ...  # <-- Integration specific parameters here
+)
+data = loader.load()
+```
+
+## Webpages
+
+The below document loaders allow you to load webpages.
+
+<CategoryTable category="webpage_loaders" />
+
+## PDFs
+
+The below document loaders allow you to load PDF documents.
+
+<CategoryTable category="pdf_loaders" />
+
+## Common File Types
+
+The below document loaders allow you to load data from common data formats.
+
+<CategoryTable category="common_loaders" />
+
+
+## All document loaders
+
+<IndexTable />

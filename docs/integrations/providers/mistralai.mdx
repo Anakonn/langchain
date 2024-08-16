@@ -1,0 +1,40 @@
+---
+canonical: https://python.langchain.com/v0.2/docs/integrations/providers/mistralai/
+---
+
+# MistralAI
+
+>[Mistral AI](https://docs.mistral.ai/api/) is a platform that offers hosting for their powerful open source models.
+
+
+## Installation and Setup
+
+A valid [API key](https://console.mistral.ai/users/api-keys/) is needed to communicate with the API.
+
+You will also need the `langchain-mistralai` package:
+
+```bash
+pip install langchain-mistralai
+```
+
+## Chat models
+
+### ChatMistralAI
+
+See a [usage example](/docs/integrations/chat/mistralai).
+
+```python
+<!--IMPORTS:[{"imported": "ChatMistralAI", "source": "langchain_mistralai.chat_models", "docs": "https://api.python.langchain.com/en/latest/chat_models/langchain_mistralai.chat_models.ChatMistralAI.html", "title": "MistralAI"}]-->
+from langchain_mistralai.chat_models import ChatMistralAI
+```
+
+## Embedding models
+
+### MistralAIEmbeddings
+
+See a [usage example](/docs/integrations/text_embedding/mistralai).
+
+```python
+<!--IMPORTS:[{"imported": "MistralAIEmbeddings", "source": "langchain_mistralai", "docs": "https://api.python.langchain.com/en/latest/embeddings/langchain_mistralai.embeddings.MistralAIEmbeddings.html", "title": "MistralAI"}]-->
+from langchain_mistralai import MistralAIEmbeddings
+```

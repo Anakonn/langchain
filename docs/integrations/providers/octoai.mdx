@@ -1,0 +1,44 @@
+---
+canonical: https://python.langchain.com/v0.2/docs/integrations/providers/octoai/
+---
+
+# OctoAI
+
+>[OctoAI](https://docs.octoai.cloud/docs) offers easy access to efficient compute 
+> and enables users to integrate their choice of AI models into applications. 
+> The `OctoAI` compute service helps you run, tune, and scale AI applications easily.
+
+
+## Installation and Setup
+
+- Install the `openai` Python package:
+  ```bash
+  pip install openai
+  ````
+- Register on `OctoAI` and get an API Token from [your OctoAI account page](https://octoai.cloud/settings).
+
+
+## Chat models
+
+See a [usage example](/docs/integrations/chat/octoai).
+
+```python
+<!--IMPORTS:[{"imported": "ChatOctoAI", "source": "langchain_community.chat_models", "docs": "https://api.python.langchain.com/en/latest/chat_models/langchain_community.chat_models.octoai.ChatOctoAI.html", "title": "OctoAI"}]-->
+from langchain_community.chat_models import ChatOctoAI
+```
+
+## LLMs
+
+See a [usage example](/docs/integrations/llms/octoai).
+
+```python
+<!--IMPORTS:[{"imported": "OctoAIEndpoint", "source": "langchain_community.llms.octoai_endpoint", "docs": "https://api.python.langchain.com/en/latest/llms/langchain_community.llms.octoai_endpoint.OctoAIEndpoint.html", "title": "OctoAI"}]-->
+from langchain_community.llms.octoai_endpoint import OctoAIEndpoint
+```
+
+## Embedding models
+
+```python
+<!--IMPORTS:[{"imported": "OctoAIEmbeddings", "source": "langchain_community.embeddings.octoai_embeddings", "docs": "https://api.python.langchain.com/en/latest/embeddings/langchain_community.embeddings.octoai_embeddings.OctoAIEmbeddings.html", "title": "OctoAI"}]-->
+from langchain_community.embeddings.octoai_embeddings import OctoAIEmbeddings
+```

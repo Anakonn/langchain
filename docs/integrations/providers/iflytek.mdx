@@ -1,0 +1,45 @@
+---
+canonical: https://python.langchain.com/v0.2/docs/integrations/providers/iflytek/
+---
+
+# iFlytek
+
+>[iFlytek](https://www.iflytek.com) is a Chinese information technology company 
+> established in 1999. It creates voice recognition software and 
+> voice-based internet/mobile products covering education, communication, 
+> music, intelligent toys industries.
+
+
+## Installation and Setup
+
+- Get `SparkLLM` app_id, api_key and api_secret from [iFlyTek SparkLLM API Console](https://console.xfyun.cn/services/bm3) (for more info, see [iFlyTek SparkLLM Intro](https://xinghuo.xfyun.cn/sparkapi)).
+- Install the Python package (not for the embedding models):
+
+```bash
+pip install websocket-client
+```
+
+## LLMs
+
+See a [usage example](/docs/integrations/llms/sparkllm).
+
+```python
+<!--IMPORTS:[{"imported": "SparkLLM", "source": "langchain_community.llms", "docs": "https://api.python.langchain.com/en/latest/llms/langchain_community.llms.sparkllm.SparkLLM.html", "title": "iFlytek"}]-->
+from langchain_community.llms import SparkLLM
+```
+
+## Chat models
+
+See a [usage example](/docs/integrations/chat/sparkllm).
+
+```python
+<!--IMPORTS:[{"imported": "ChatSparkLLM", "source": "langchain_community.chat_models", "docs": "https://api.python.langchain.com/en/latest/chat_models/langchain_community.chat_models.sparkllm.ChatSparkLLM.html", "title": "iFlytek"}]-->
+from langchain_community.chat_models import ChatSparkLLM
+```
+
+## Embedding models
+
+```python
+<!--IMPORTS:[{"imported": "SparkLLMTextEmbeddings", "source": "langchain_community.embeddings", "docs": "https://api.python.langchain.com/en/latest/embeddings/langchain_community.embeddings.sparkllm.SparkLLMTextEmbeddings.html", "title": "iFlytek"}]-->
+from langchain_community.embeddings import SparkLLMTextEmbeddings
+```

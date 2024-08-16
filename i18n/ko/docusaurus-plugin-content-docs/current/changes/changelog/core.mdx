@@ -1,0 +1,14 @@
+---
+description: 이 문서는 langchain-core 0.1.x 버전의 주요 변경 사항과 사용 중단된 메서드에 대한 정보를 제공합니다.
+---
+
+# langchain-core
+
+## 0.1.x
+
+#### 사용 중단
+
+- `BaseChatModel` 메서드 `__call__`, `call_as_llm`, `predict`, `predict_messages`. 0.2.0에서 제거될 예정입니다. 대신 `BaseChatModel.invoke`를 사용하세요.
+- `BaseChatModel` 메서드 `apredict`, `apredict_messages`. 0.2.0에서 제거될 예정입니다. 대신 `BaseChatModel.ainvoke`를 사용하세요.
+- `BaseLLM` 메서드 `__call__`, `predict`, `predict_messages`. 0.2.0에서 제거될 예정입니다. 대신 `BaseLLM.invoke`를 사용하세요.
+- `BaseLLM` 메서드 `apredict`, `apredict_messages`. 0.2.0에서 제거될 예정입니다. 대신 `BaseLLM.ainvoke`를 사용하세요.
