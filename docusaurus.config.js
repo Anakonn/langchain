@@ -4,7 +4,7 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 // eslint-disable-next-line import/no-extraneous-dependencies
 const { ProvidePlugin } = require("webpack");
-require("dotenv").config();
+// require("dotenv").config();
 
 const baseLightCodeBlockTheme = require("prism-react-renderer/themes/vsLight");
 const baseDarkCodeBlockTheme = require("prism-react-renderer/themes/vsDark");
@@ -332,18 +332,18 @@ const config = {
 				],
 				copyright: `Copyright © ${new Date().getFullYear()} LangChain, Inc.`,
 			},
-			algolia: {
-				// The application ID provided by Algolia
-				appId: "VAU016LAWS",
+			// algolia: {
+			// 	// The application ID provided by Algolia
+			// 	appId: "VAU016LAWS",
 
-				// Public API key: it is safe to commit it
-				// this is linked to erick@langchain.dev currently
-				apiKey: "6c01842d6a88772ed2236b9c85806441",
+			// 	// Public API key: it is safe to commit it
+			// 	// this is linked to erick@langchain.dev currently
+			// 	apiKey: "6c01842d6a88772ed2236b9c85806441",
 
-				indexName: "python-langchain-0.2",
+			// 	indexName: "python-langchain-0.2",
 
-				contextualSearch: false,
-			},
+			// 	contextualSearch: false,
+			// },
 		}),
 
 	scripts: [
